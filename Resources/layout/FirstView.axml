@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		local:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ImageView
+			android:id="@+id/posts_placeholder"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/Background"
+			android:adjustViewBounds="true"
+			android:scaleType="centerCrop" />
+	  <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    <Button
+	      android:id="@+id/btn_second_view"
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:layout_marginTop="20dp"
+	      android:layout_marginBottom="16dp"
+	      android:layout_marginLeft="60dp"
+	      android:layout_marginRight="60dp"
+	      android:textSize="15sp"
+	      android:textAllCaps="true"
+	      android:background="@color/colorAccent"
+	      android:textColor="@android:color/white"
+	      android:stateListAnimator="@null"
+	      android:text="Open second view"
+	      local:MvxBind="Click OpenSecondViewCommand" />
+	  </LinearLayout>
+	</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
